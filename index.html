@@ -106,6 +106,382 @@
 				</section>
 
 				<section data-auto-animate>
+					<h2 data-id="code-title">Operators</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim>
+						>>> 2
+						2
+						>>> 2 + 2
+						4
+						>>>
+					</code></pre>
+				</section>
+
+				<section>
+					<table>
+						<thead>
+							<tr>
+								<th>Operator</th>
+								<th>Operation</th>
+								<th>Example</th>
+								<th>Evaluates to...</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>**</td>
+								<td>Exponent</td>
+								<td>2 ** 3</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>%</td>
+								<td>Modulus/remainder</td>
+								<td>22 & 8</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>//</td>
+								<td>Integer division/floored quotient</td>
+								<td>22 // 8</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>/</td>
+								<td>Division</td>
+								<td>22 / 8</td>
+								<td>2.75</td>
+							</tr>
+							<tr>
+								<td>*</td>
+								<td>Multiplication</td>
+								<td>3 * 5</td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>Subtraction</td>
+								<td>5 - 2</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>+</td>
+								<td>Addition</td>
+								<td>2 + 2</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Order of Operations Example</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim>
+						>>> 2 + 3 * 6
+						20
+						>>> (2 + 3) * 6
+						30
+						>>> 23 / 7
+						3.2857142857142856
+						>>> 2      +           2
+						4
+						>>> (5 - 1) * ((7 + 1) / (3 - 1))
+						16.0
+					</code></pre>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/7gWrQRvlWtdqE/giphy.gif">
+					<h2>Remember</h2>
+					<p>Expressions are just values combined with operators, and they always evaluate down to a single value</p>
+					<p>A data type is a category for values, and every value belongs to exactly one data type.</p>
+				</section>
+				
+				<section>
+					<p>Most common data types in Python</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Data Type</th>
+								<th>Examples</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Integers</td>
+								<td>-2, -1, 0, 1, 2, 3, 4, 5</td>
+							</tr>
+							<tr>
+								<td>Floating-point numbers</td>
+								<td>-1.25, -1.0, -0.5, 0.0, 0.5, 1.0, 1.25</td>
+							</tr>
+							<tr>
+								<td>Strings</td>
+								<td>'a', 'aa', 'aaa', 'Hello!', '11 cats'</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">String Examples</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim>
+						>>> 'Alice' + 'Bob'
+						'AliceBob'
+						>>> 'Alice' + 42
+						...TypeError: can only concatenate str (not "int") to str
+						>>> 'Alice' * 5
+						'AliceAliceAliceAliceAlice'
+						>>> 'Alice' * 'Bob'
+						...TypeError: can't multiply sequence by non-int of type 'str'
+						>>> 'Alice' * 5.0
+						...TypeError: can't multiply sequence by non-int of type 'float'
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Assignment Statements</h2>
+					<img src="https://automatetheboringstuff.com/2e/images/000026.jpg">
+					<p style="font-size: large">Variable name, an equal sign (called the assignment operator), and the value to be stored</p>
+					<p style="font-size: large">If you enter the assignment statement spam = 42, then a variable named spam will have the integer value 42 stored in it.</p>
+					<p style="font-size: large">Think of a variable as a labeled box that a value is placed in</p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim>
+						>>> spam = 40
+						>>> spam
+						40
+						>>> eggs = 2
+						>>> spam + eggs
+						42
+						>>> spam + eggs + spam
+						82
+						>>> spam = spam + 2
+						>>> spam
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Naming variables</h2>
+					<p>Please don't call spam a variable that contains the integer 40</p>
+					<p>Use descriptive names</p>
+					<p>It can be only one word with no spaces.</p>
+					<p>It can use only letters, numbers, and the underscore (_) character.</p>
+					<p>It can’t begin with a number.</p>
+					<p>camelCaseIsPreferred</p>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif">
+				</section>
+
+				<section>
+					<h2>First Program</h2>
+					<p style="font-size: xx-small;">No quotes this time.</p>
+					<p>Setup your editor of choice</p>
+					<p>Instructions for <a href="https://code.visualstudio.com/docs/python/python-tutorial">VS Code</a></p>
+					<p>Save all the time!</p>
+					<p></p>
+				</section>
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Hello</h2>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|1|3-4|5|6|7-8|9-11">
+						# This program says hello and asks for my name.
+
+						print('Hello, world!')
+						print('What is your name?')    # ask for their name
+						myName = input()
+						print('It is good to meet you, ' + myName)
+						print('The length of your name is:')
+						print(len(myName))
+						print('What is your age?')    # ask for their age
+						myAge = input()
+						print('You will be ' + str(int(myAge) + 1) + ' in a year.')
+					</code></pre>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/lVBtp4SRW6rvDHf1b6/giphy.gif">
+					<h2 style="color: black">Flow Control</h2>
+				</section>
+
+				<section>
+					<h2>Flow Control</h2>
+					<img src="https://automatetheboringstuff.com/2e/images/000039.jpg">
+				</section>
+				
+				<section>
+					<h2 data-id="code-title">Boolean Values</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						>>> spam = True
+						>>> spam
+						True
+						>>> true
+						Traceback (most recent call last):
+							File "<pyshell#2>", line 1, in <module>
+								true
+						NameError: name 'true' is not defined
+						>>> True = 2 + 2
+						SyntaxError: can't assign to keyword
+					</script></code></pre>
+				</section>
+				
+				<section>
+					<h2>Comparison Operators</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Operator</th>
+								<th>Meaning</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>==</td>
+								<td>Equal to</td>
+							</tr>
+							<tr>
+								<td>!=</td>
+								<td>Not equal to</td>
+							</tr>
+							<tr>
+								<td><</td>
+								<td>Less than</td>
+							</tr>
+							<tr>
+								<td>></td>
+								<td>Greater than</td>
+							</tr>
+							<tr>
+								<td><=</td>
+								<td>Less than or equal to</td>
+							</tr>
+							<tr>
+								<td>>=</td>
+								<td>More than or equal to</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						>>> 42 == 42
+						True
+						>>> 42 == 99
+						False
+						>>> 2 != 3
+						True
+						>>> 2 != 2
+						False
+						>>> 'hello' == 'hello'
+						True
+						>>> 'hello' == 'Hello'
+						False
+						>>> 'dog' != 'cat'
+						True
+						>>> True == True
+						True
+						>>> True != False
+						True
+						>>> 42 == 42.0
+						True
+						>>> 42 == '42'
+						False
+						>>> 42 < 100
+						True
+						>>> 42 > 100
+						False
+						>>> 42 < 42
+						False
+						>>> eggCount = 42
+						>>> eggCount <= 42
+						True
+						>>> myAge = 29
+						>>> myAge >= 10
+						True
+					</script></code></pre>
+				</section>
+
+				<section>
+					<h2>Binary Boolean Operators</h2>
+					<p>"and" and "or" operators always take two Boolean values (or expressions), so they’re considered binary operators.</p>
+					<p>The "and" operator evaluates an expression to True if both Boolean values are True; otherwise, it evaluates to False.</p>
+					<p>the "or" operator evaluates an expression to True if either of the two Boolean values is True. If both are False, it evaluates to False.</p>
+				</section>
+
+				<section>
+					<h2>The "and" Operator’s Truth Table</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Expression</th>
+								<th>Evaluates to...</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>True and True</td>
+								<td>True</td>
+							</tr>
+							<tr>
+								<td>True and False</td>
+								<td>False</td>
+							</tr>
+							<tr>
+								<td>False and True</td>
+								<td>False</td>
+							</tr>
+							<tr>
+								<td>False and False</td>
+								<td>False</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/WRQBXSCnEFJIuxktnw/giphy.gif">
+					<h2 style="color: black">What about the "or" Truth Table?</h2>
+				</section>
+
+				<section>
+					<h2>The "not" Operator</h2>
+					<p>Operates on only one Boolean value (or expression).</p>
+					<p>This makes it a unary operator.</p>
+					<p>The not operator simply evaluates to the opposite Boolean value.</p>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						>>> not True
+						False
+						>>> not not not not True
+						True
+					</script></code></pre>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Mixing Boolean and Comparison Operators</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						>>> (4 < 5) and (5 < 6)
+						True
+					</script></code></pre>
+					<img src="https://automatetheboringstuff.com/2e/images/000095.jpg">
+				</section>
+
+				<section>
+					<h2>Program Execution</h2>
+					<p>The program execution (or simply, execution) is a term for the current instruction being executed.</p>
+					<p>If you print the source code on paper and put your finger on each line as it is executed, you can think of your finger as the program execution.</p>
+					<p>Not all programs execute by simply going straight down, however.</p>
+					<p>If you use your finger to trace through a program with flow control statements, you’ll likely find yourself jumping around the source code based on conditions, and you’ll probably skip entire clauses.</p>
+				</section>
+
+
+
+
+				<section data-auto-animate>
 					<h2 data-id="code-title">With animations</h2>
 					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
 						import React, { useState } from 'react';

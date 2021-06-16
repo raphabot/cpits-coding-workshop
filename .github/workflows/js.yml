@@ -1,5 +1,7 @@
 name: tests
 
+environment: production
+
 on:
   push:
     branches:

@@ -478,6 +478,48 @@
 					<p>If you use your finger to trace through a program with flow control statements, you’ll likely find yourself jumping around the source code based on conditions, and you’ll probably skip entire clauses.</p>
 				</section>
 
+				<section>
+					<h2>Blocks of Code</h2>
+					<p>Blocks begin when the indentation increases.</p>
+					<p>Blocks can contain other blocks.</p>
+					<p>Blocks end when the indentation decreases to zero or to a containing block’s indentation.</p>
+				</section>
+
+				<section>
+					<h2>"if" Statements</h2>
+					<p>The most common type of flow control statemen</p>
+					<p>An "if" statement’s clause (that is, the block following the "if" statement) will execute if the statement’s condition is True</p>
+					<p>The clause is skipped if the condition is False.</p>
+					<p>“If this condition is true, execute the code in the clause.</p>
+				</section>
+				
+				<section>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						if name == 'Alice':
+							print('Hi, Alice.')
+					</script></code></pre>
+					<img src="https://automatetheboringstuff.com/2e/images/000147.jpg">
+				</section>
+
+				<section>
+					<h2>"else" Statements</h2>
+					<p>An if clause can optionally be followed by an else statement.</p>
+					<p>The else clause is executed only when the if statement’s condition is False.</p>
+					<p>If this condition is true, execute this code. Or else, execute that code.</p>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						if name == 'Alice':
+								print('Hi, Alice.')
+						else:
+								print('Hello, stranger.')
+					</script></code></pre>
+					<img src="https://automatetheboringstuff.com/2e/images/000118.jpg">
+				</section>
+
 
 
 

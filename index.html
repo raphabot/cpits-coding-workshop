@@ -575,6 +575,87 @@
 					</section>
 				</section>
 
+				<section>
+					<h2>"for" Loops and the range() Function</h2>
+					<p>If you want to execute a block of code only a certain number of times</p>
+				</section>
+
+				<section>
+					<section>
+						<h2 data-id="code-title">Example</h2>
+						<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+							print('My name is')
+							for i in range(5):
+									print('Jimmy Five Times (' + str(i) + ')')
+						</script></code></pre>
+						<p>Flowchart below.</p>
+					</section>
+					<section>
+						<img src="https://automatetheboringstuff.com/2e/images/000027.jpg" class="stretch">
+					</section>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/xUOxfjsW9fWPqEWouI/giphy.gif">
+					<p class="fragment" style="color:black">Can you rewrite the previous code without using "for"?</p>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						# range(Starting, Stopping, Stepping arguments)
+						for i in range(0, 10, 2):
+    					print(i)
+						>>
+						0
+						2
+						4
+						6
+						8
+					</script></code></pre>
+				</section>
+
+				<section>
+					<h2>Modules</h2>
+					<p>All Python programs can call a basic set of functions called built-in functions</p>
+					<p>Python also comes with a set of modules called the standard library</p>
+					<p>Each module is a Python program that contains a related group of functions that can be embedded in your programs.</p>
+					<p>For example, the random module has random number-related functions</p>
+					<p>You must import the module with an import statement</p>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Example</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						import random
+						for i in range(5):
+								print(random.randint(1, 10))
+						# Who knows what the output is?!
+					</script></code></pre>
+				</section>
+
+				<section data-background="https://media.giphy.com/media/xUn3CftPBajoflzROU/giphy.gif">
+					<p class="fragment" style="color:white">Can you write a "Guess the Number" game?</p>
+				</section>
+
+				<section>
+					<h2 data-id="code-title">Example Output</h2>
+					<pre data-id="code-animation"><code class="hljs"><script type="text/template">
+						I am thinking of a number between 1 and 20.
+						Take a guess.
+						USER INPUT: 10
+						Your guess is too low.
+						Take a guess.
+						USER INPUT: 15
+						Your guess is too low.
+						Take a guess.
+						USER INPUT: 17
+						Your guess is too high.
+						Take a guess.
+						USER INPUT: 16
+						Good job! You guessed my number in 4 guesses!
+					</script></code></pre>
+				</section>
+
 
 
 
